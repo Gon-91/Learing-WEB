@@ -1,45 +1,76 @@
 <!doctype html>
 <html>
-<head>
-  <title> HG - Learning WEB </title>
-  <meta charset="utf-8">
-  <style>
-    a{
-      color: black;
-      text-decoration: :none;
-    }
-    h1{
-      font-size:45px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1><a href="index.html">HG - Learing WEB</a></h1>
+  <head>
+    <title>HwanGon - Learing WEB</title>
+    <meta charset="utf-8">
+    <style>
+      .Main h1{
+        font-size: 45px;
+        color:black;
+        border-bottom:gray solid 3px;
+        padding:20px;
+        margin: 0px;
+      }
+      .Grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      .Menu {
+        border-right:gray solid 3px;
 
-  <ul>
-    <a href ="index.html"><li>Main</li></a>
-    <a href ="web.html"><li>WEB</li></a>
-    <a href="html.html" style =color:blue><li>HTML</li></a>
-      <ol>
-        <a href ="html_rank.html"><li>HTML_Ranking</li></a>
-      </ol>
-    <a href="css.html"><li>CSS</li></a>
-    <a href="javascript.html"><li>JavaScript</li></a>
-    <a href="log.html"><li>Log</li></a>
-  </ul>
-<img src ="img/Start.jpg" width ="30%">
-<h2>HTML-Hyper Text Makeup Language</h2>
-  <p>현재 인터넷 상의 웹이 있게 만들어준 최초의 언어입니다.
-  HTML은 인터넷 위에, 웹페이지를 만들수 있게 해준 언어로, 문서들은 데이터화 하는데에 중점을
-  언어 입니다. 사실 웹이 개발된 초기에는 이런 문서를 인터넷 상에 공유한다는것 차제가 혁명이였기 때문입니다.
-  어찌됬든, 이러한 HTML이라는 컴퓨터 언어가 생김으로서 오늘날 수많은 웹 개발 정보에 바다에 우리가
-살수 있게 되었습니다. 지금까지도 매우 기본이면서 중요한 언이기도 합니다.</p>
+      }
+      .Menu ul {
+        color : black;
+        font-size: 15px;
+        font-weight: bold;
+        padding : 10px;;
+        margin: 0px;
 
-<h2>HTML - Configration of HTML - Tag </h2>
-  <p>최초의 HTML은 사실 20개정도의 Tag로 구성이 되어있었습니다. 이 Tag는 이 전자화된 글들을 실제 유의미한
-    데이터가 되기 위해 만들어진
-  </p>
+      }
+      .Menu li {
+        list-style-type:none;
+        padding:2px;
+      }
+      .Menu a {
+        color: black;
+        text-decoration: none;
+      }
+      .Article h2 {
+        margin: 20px;
+      }
+      .Article p {
 
-</body>
+        margin : 25px;
+      }
+      .Article img {
+        display: block;
+        margin: auto;
+        width: 40%;
+      }
+      #Active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+      <div class = "Main">
+        <h1>Learing WEB</h1>
+      </div>
+    <div class = "Grid">
+      <div class = "Menu">
+        <ul>
+          <li><a href = "index.html" >Main</a></li>
+          <li><a href = "web.html" >WEB</a></li>
+          <li><a href = "html.html" id = "Active">HTML</li></a></li>
+          <li><a href = "css.html" >CSS</li></a></li>
+          <li><a href = "javascript.html" >JavaScript</li></a></li>
+        </ul>
+      </div>
+      <div class = "Article">
+        <h2>Start Learing !</h2>
+        <img src ="img/Start.jpg">
+        <p>Article</p>
+      </div>
+    </div>
+  </body>
 </html>

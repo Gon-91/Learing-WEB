@@ -1,44 +1,76 @@
 <!doctype html>
 <html>
-<head>
-  <title> HG - Learning WEB </title>
-  <meta charset="utf-8">
-  <style>
-    a{
-      color: black;
-      text-decoration: :none;
-    }
-    h1{
-      font-size:45px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1><a href="index.html">HG - Learing WEB</a></h1>
+  <head>
+    <title>HwanGon - Learing WEB</title>
+    <meta charset="utf-8">
+    <style>
+      .Main h1{
+        font-size: 45px;
+        color:black;
+        border-bottom:gray solid 3px;
+        padding:20px;
+        margin: 0px;
+      }
+      .Grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      .Menu {
+        border-right:gray solid 3px;
 
-  <ul>
-    <a href ="index.html"><li>Main</li></a>
-    <a href ="web.html"><li>WEB</li></a>
-    <a href="html.html"><li>HTML</li></a>
-    <a href="css.html" style =color:blue><li>CSS</li></a>
-    <a href="javascript.html"><li>JavaScript</li></a>
-    <a href="log.html"><li>Log</li></a>
-  </ul>
-<img src ="img/Start.jpg" width ="30%">
-<h2>공부의 시작과 </h2>
-  <p>2020년 11월 3일 시작하게된 나의 첫 WEB 그리고 Github.</p>
-  <p>공부를 시작하며, 내가 배운 과정들을 잘 정리해서 보관하는게 이 WEB page들을 만드는 목표이다.
-  부지런히 만들어보며 그 과정들이 Github에 저장을 하여 2020년 안에 어떤 결과과 나왔나 볼수 있도록 해보자.</p>
-<h2>구상중인 내용</h2>
-  <ul>
-    <li>Main</li>
-    <li>HTML</li>
-    <ul>
-      <li>HTML origine ---</li>
-      <li>WEB origine --- </li>
-      <li>Tag ----</li>
-    </ul></ul>
+      }
+      .Menu ul {
+        color : black;
+        font-size: 15px;
+        font-weight: bold;
+        padding : 10px;;
+        margin: 0px;
 
-</body>
+      }
+      .Menu li {
+        list-style-type:none;
+        padding:2px;
+      }
+      .Menu a {
+        color: black;
+        text-decoration: none;
+      }
+      .Article h2 {
+        margin: 20px;
+      }
+      .Article p {
+
+        margin : 25px;
+      }
+      .Article img {
+        display: block;
+        margin: auto;
+        width: 40%;
+      }
+      #Active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+      <div class = "Main">
+        <h1>Learing WEB</h1>
+      </div>
+    <div class = "Grid">
+      <div class = "Menu">
+        <ul>
+          <li><a href = "index.html" >Main</a></li>
+          <li><a href = "web.html" >WEB</a></li>
+          <li><a href = "html.html">HTML</li></a></li>
+          <li><a href = "css.html" id = "Active">CSS</li></a></li>
+          <li><a href = "javascript.html">JavaScript</li></a></li>
+        </ul>
+      </div>
+      <div class = "Article">
+        <h2>Start Learing !</h2>
+        <img src ="img/Start.jpg">
+        <p>Article</p>
+      </div>
+    </div>
+  </body>
 </html>
